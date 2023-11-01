@@ -11,12 +11,22 @@ class Splash extends StatelessWidget {
       //appBar: AppBar(),
       // backgroundColor: Colors.black,
       body: Container(
-        decoration: BoxDecoration(
-          ///to set background image for body
-            image: DecorationImage(
-                fit: BoxFit.cover,
-                image: NetworkImage(
-                    "https://media.istockphoto.com/id/1186290936/photo/leaf-texture-background-abstract-foliage-tropical-pattern-natu.jpg?s=612x612&w=0&k=20&c=F_CvjOuq7637JypUKkaDBZBXvxy9bRibgr4wF88Y5K8="))),
+        decoration: const BoxDecoration(
+            ///to set background image for body
+            //   image: DecorationImage(
+            //       fit: BoxFit.cover,
+            //       image: NetworkImage(
+            //           "https://media.istockphoto.com/id/1186290936/photo/leaf-texture-background-abstract-foliage-tropical-pattern-natu.jpg?s=612x612&w=0&k=20&c=F_CvjOuq7637JypUKkaDBZBXvxy9bRibgr4wF88Y5K8="))
+            ///to set background gradient for body
+            gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+              Colors.blue,
+              Colors.yellow,
+              Colors.redAccent,
+              Colors.blue,
+            ])),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
