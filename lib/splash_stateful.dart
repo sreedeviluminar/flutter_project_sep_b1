@@ -1,4 +1,6 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter_project_sep_b1/loginpage.dart';
 import 'package:lottie/lottie.dart';
 
 void main() {
@@ -9,11 +11,20 @@ void main() {
 
 class Splash2 extends StatefulWidget {
   @override
-  State<Splash2> createState() =>
-      _Splash2State(); // create a mutable state for this widget
+  State<Splash2> createState() => _Splash2State(); // create a mutable state for this widget
 }
 
 class _Splash2State extends State<Splash2> {
+
+ @override
+  void initState() {
+   Timer(const Duration(seconds: 4), () {
+     Navigator.pushReplacement(context, MaterialPageRoute(
+         builder: (context) => LoginPage()));
+   });
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
