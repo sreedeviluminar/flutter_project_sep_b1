@@ -89,6 +89,7 @@ class ListView2 extends StatelessWidget {
                   leading: CircleAvatar(
                     backgroundImage:
                     NetworkImage(images[index]),
+                    //backgroundColor: Colors.primaries[index % Colors.primaries.length],
                     //backgroundColor: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                     //child: Icon(Icons.person),
                   ),
